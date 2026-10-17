@@ -1,0 +1,18 @@
+spring:
+  config:
+    import: optional:classpath:secrets.yml
+  profiles:
+    active: dev
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: email@gmail.com
+    password: xxxx xxxx xxxx xxxx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+Weather_api_key : ${WEATHER_API_KEY}
